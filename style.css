@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+body{
+    display: block;
+}
+.main_container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+}
+.left_conatiner{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(215, 229, 243);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+}
+.right_container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 35vh;
+    font-size: large;
+}
+.textbox-inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#text_area{
+    width: 600px;
+    box-shadow: 4px 4px 10px 0px #803636;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.right-container h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button{
+ margin-left: 150px;
+}
+#addnote_btn{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #fbb03b);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+
+}
+
+#addnote_btn:hover{
+    background-image: linear-gradient(to right, #772144, #d3400a, #f7186a, #ac741a);
+    box-shadow: 0 4px 15px 0 rgba(163, 62, 89, 0.75);
+}
