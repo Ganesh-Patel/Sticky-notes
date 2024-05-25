@@ -6,7 +6,7 @@ let message = document.getElementById("message");
 
 function addNotes() {
     if (text.value === "") {
-        alert("Please enter some text in textbox");
+        alert("Please enter some text in the textbox");
         return;
     }
     message.innerText = "";
@@ -21,16 +21,17 @@ function addNotes() {
     p.innerText = text.value;
     div.style.backgroundColor = color.value;
 
-    div.style.width = "200px";
+    div.style.width = "190px";
     div.style.height = "150px";
     div.style.padding = "10px";
     div.style.marginBottom = "10px";
     div.style.position = "relative";
     div.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
     div.style.borderRadius = "5px";
-    div.style.display="flex";
-
-    // Add styles to cross button
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+    div.style.justifyContent = "center";
+    div.style.alignItems = "center";
     cross_btn.style.position = "absolute";
     cross_btn.style.top = "5px";
     cross_btn.style.right = "5px";
@@ -46,8 +47,11 @@ function addNotes() {
 
     text.value = "";
 
-    cross_btn.addEventListener("click", function() {
+    cross_btn.addEventListener("click", function () {
         div.style.display = "none";
+        if (notes_conatiner.children.length === 0) {
+            message.innerText = "You have not added a note yet.";
+        }
     });
 }
 
